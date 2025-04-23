@@ -1,75 +1,88 @@
 Manejo de Archivos
 -------------
-### 1. Lenguaje utilizado
+###1. Lenguaje utilizado
 
-- Python (se usan módulos como os, csv y json).
+- Python (se usan módulos como `os`, `csv` y `json`).
 
 ### 2. Herramientas y sus Funciones
 
-- os.path.exists(): Verifica si un archivo existe. Relacionado con la comprobación de la existencia de archivos.
+- `os.path.exists():` Verifica si un archivo existe. Relacionado con la comprobación de la existencia de archivos.
 
-- csv.writer(): Escribe datos en un archivo CSV. Relacionado con la lectura y escritura usando la biblioteca csv.
+- `csv.writer():` Escribe datos en un archivo CSV. Relacionado con la lectura y escritura usando la biblioteca `csv`.
 
-- csv.reader(): Lee datos de un archivo CSV. Relacionado con los ejemplos prácticos con archivos CSV.
+- `csv.reader():` Lee datos de un archivo CSV. Relacionado con los ejemplos prácticos con archivos CSV.
 
-- json.dump(): Guarda datos en formato JSON. Relacionado con la serialización usando la biblioteca json.
+- `json.dump():` Guarda datos en formato JSON. Relacionado con la serialización usando la biblioteca `json`.
 
--  json.load(): Carga datos desde un archivo JSON. Relacionado con la deserialización usando la biblioteca json.
+- ` json.load():` Carga datos desde un archivo JSON. Relacionado con la deserialización usando la biblioteca `json`.
 
-- with open():  Abre y cierra archivos automáticamente. Relacionado con el cierre automático de archivos usando with.
+- `with open(): ` Abre y cierra archivos automáticamente. Relacionado con el cierre automático de archivos usando `with`.
 
-- try-except: Maneja errores al trabajar con archivos. Relacionado con el uso de bloques try y except para manejo de excepciones.
+- `try-except: `Maneja errores al trabajar con archivos. Relacionado con el uso de bloques `try` y `except` para manejo de excepciones.
 
 ### 3. Archivos Usados
 
 #####  1contactos.csv:
- - Tipo:  Archivo CSV (valores separados por comas).
+ - **Tipo: ** Archivo CSV (valores separados por comas).
 
-- Función: Almacena contactos en formato tabular, con columnas para Nombre y Telefono.
+- **Función:** Almacena contactos en formato tabular, con columnas para `Nombre` y `Telefono`.
 
-- Tema relacionado: Tipos de archivos: CSV.
+- **Tema relacionado**: Tipos de archivos: CSV.
 
 
 ##### 2 contactos.json:
 
-- Tipo: Archivo JSON (formato estructurado).
+- **Tipo**: Archivo JSON (formato estructurado).
 
-- Función: Almacena contactos como una lista de diccionarios, donde cada contacto tiene las claves Nombre y Telefono.
+- **Función**: Almacena contactos como una lista de diccionarios, donde cada contacto tiene las claves `Nombre` y `Telefono`.
 
-- Tema relacionado: Tipos de archivos: JSON.
+- **Tema relacionado**: Tipos de archivos: JSON.
 
 ### 4. Temas Cubiertos en el Ejercicio
 
-✅ Tipos de archivos: 
-- CSV (contactos.csv) y JSON (contactos.json).
+✅** Tipos de archivos**: 
+- CSV (`contactos.csv`) y JSON (`contactos.json`).
 
-✅ Apertura y cierre de archivos:
-- Uso de with open() para manejo seguro de archivos
+✅ **Apertura y cierre de archivo**s:
+- Uso de` with open()` para manejo seguro de archivos
 
-✅ Escritura de archivos:
-- Modos "w" (creación), "a" (añadir datos), "r" (lectura).
+✅** Escritura de archivos**:
+- Modos `"w"` (creación), `"a"` (añadir datos), `"r"` (lectura).
 
-✅ **Uso de try-except**:
-- Manejo de errores al leer/escribir archivos.Comprobación de existencia de archivos:s:**
-- os.path.exists() antes de crear archivos.
+✅ **Uso de `try-except`**:
+- Manejo de errores al leer/escribir archivos.
 
-✅** Lectura/escritura con csv:**
-- csv.writer() y csv.reader() para manejar datos tabul Serialización/deserialización con json: json:**
-- json.dump() y json.load() para guardar y cargar datos estructuraCierre automático con with: with:**
-- Garantiza que los archivos se cierren correctameOrganización de archivos en proyectos:ectos:**
-- Uso de dos formatos (CSV y JSON) para almacenar los mismos daNo se usaron explícitamente:mente:**
-- read(), readline(), readlines() (se usan alternativas como csv.reader y json.load).
-- Modo r+ (solo se usaron w, a, r).
+✅ **Comprobación de existencia de archivos:**
+- `os.path.exists()` antes de crear archivos.
 
-### 5. Resumen del Funcionamiento del P1.Verifica si existen los archivoschivos** (contactos.csv y contactos.json).
+✅** Lectura/escritura con `csv`:**
+- `csv.writer()` y `csv.reader()` para manejar datos tabulares.
+
+✅** Serialización/deserialización con `json`:**
+- `json.dump()` y `json.load()` para guardar y cargar datos estructurados.
+
+✅ **Cierre automático con `with`:**
+- Garantiza que los archivos se cierren correctamente.
+
+✅ **Organización de archivos en proyectos:**
+- Uso de dos formatos (CSV y JSON) para almacenar los mismos datos
+
+.❌ **No se usaron explícitamente:**
+- `read()`, `readline()`, `readlines(`) (se usan alternativas como `csv.reader` y `json.load`).
+- Modo `r+` (solo se usaron `w`, `a`, `r`).
+
+### 5. Resumen del Funcionamiento del Programa
+**1.Verifica si existen los archivos** (`contactos.csv` y `contactos.json`).
 - Si no existen, los crea:
-   - CSV: con una cabecera (Nombre, Telefono).
-     - JSON: como una lista vacía [].
-  
-**2.Pide datos al usuario** (nombre y 3.Guarda el contacto en ambos formatos: forCSV:
+   - CSV: con una cabecera `(Nombre`, `Telefono`).
+     - JSON: como una lista vacía `[]`.
+	 
+**2.Pide datos al usuario** (nombre y teléfono).
 
-- **CSV:** Añade una nueva fila con csv.writer().
+**3.Guarda el contacto en ambos formatos:**
 
-- **JSON:** Carga la lista existente, añade el nuevo contacto y guarda con json.dump().
+- **CSV:** Añade una nueva fila con `csv.writer()`.
+
+- **JSON:** Carga la lista existente, añade el nuevo contacto y guarda con `json.dump()`.
 
 **4.Muestra el contenido de ambos archivos** para confirmar los datos.
