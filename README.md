@@ -23,11 +23,11 @@ Manejo de Archivos
 ### 3. Archivos Usados
 
 #####  1contactos.csv:
- - **Tipo: ** Archivo CSV (valores separados por comas).
+ - **Tipo:** Archivo CSV (valores separados por comas).
 
 - **Función:** Almacena contactos en formato tabular, con columnas para `Nombre` y `Telefono`.
 
-- **Tema relacionado**: Tipos de archivos: CSV.
+- **Tema relacionado:** Tipos de archivos: CSV.
 
 
 ##### 2 contactos.json:
@@ -36,29 +36,29 @@ Manejo de Archivos
 
 - **Función**: Almacena contactos como una lista de diccionarios, donde cada contacto tiene las claves `Nombre` y `Telefono`.
 
-- **Tema relacionado**: Tipos de archivos: JSON.
+- **Tema relacionado:** Tipos de archivos: JSON.
 
 ### 4. Temas Cubiertos en el Ejercicio
 
-✅** Tipos de archivos**: 
+✅ **Tipos de archivos**: 
 - CSV (`contactos.csv`) y JSON (`contactos.json`).
 
 ✅ **Apertura y cierre de archivo**s:
 - Uso de` with open()` para manejo seguro de archivos
 
-✅** Escritura de archivos**:
+✅ **Escritura de archivos**:
 - Modos `"w"` (creación), `"a"` (añadir datos), `"r"` (lectura).
 
-✅ **Uso de `try-except`**:
+✅ **Uso de `try-except`:**
 - Manejo de errores al leer/escribir archivos.
 
 ✅ **Comprobación de existencia de archivos:**
 - `os.path.exists()` antes de crear archivos.
 
-✅** Lectura/escritura con `csv`:**
+✅ **Lectura/escritura con `csv`:**
 - `csv.writer()` y `csv.reader()` para manejar datos tabulares.
 
-✅** Serialización/deserialización con `json`:**
+✅ **Serialización/deserialización con `json`:**
 - `json.dump()` y `json.load()` para guardar y cargar datos estructurados.
 
 ✅ **Cierre automático con `with`:**
